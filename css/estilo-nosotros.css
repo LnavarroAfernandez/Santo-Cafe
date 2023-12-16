@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+}
+
+/*-- Estilo enlaces de barra de navegaciones --*/
+.enlaces{
+    gap: 1em;
+}
+.navbar-nav .nav-item .nav-link {
+    color: rgb(0, 0, 0);
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: brown;
+}
+
+/* ---- CONTENEDOR / ARTICLE / SECTION --- */
+.contenedor{
+    width: 100%;
+    background-color: rgb(94, 72, 42);
+    font-family: "roboto slab";
+    padding: 0 20px 5px 20px;
+}
+
+/*------------------*/
+.contenedor h2{
+    color:rgb(214, 214, 208);
+    padding-left: 70px;
+    padding-top: 15px;
+    font-family: roboto mono;
+}
+
+/*-- Imagen y cuadros de información --*/
+.mision{
+    width: 100%;
+    padding: 20px 5% 5px 5%;
+    font-family: "roboto slap";
+    align-items: center;
+}
+.gif-cafe{
+    display: flex;
+    justify-content: center;
+}
+.gif-cafe>img{
+    width: 75%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.nuestra-mision{
+    width: 85%;
+    color: rgb(214, 203, 203);
+    font-size: 15px;
+}
+/*-----------------------*/
+.valores{
+    padding-left: 40px;
+    padding-top: 40px;
+    color: rgb(214, 203, 203);
+    font-family: "roboto slab";
+}
+.trabaja{
+    padding-left: 40px;
+    padding-top: 20px;
+    color: rgb(214, 203, 203);
+    font-family: "roboto slab";
+
+}
+/*---- Pie de pagina ----*/
+footer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+/*////////////---------------///////////////*/
+/* Medidas para pantallas pequeñas / celulares */
+@media (min-width: 300px) and (max-width: 767px) {
+    .contenedor{
+        height: fit-content;
+    }
+    .container{
+        height: fit-content;
+    }
+    .gif-cafe{
+        max-width:fit-content;
+    }
+    .nuestra-mision{
+        margin: 12px 0 0 16px;
+    }
+    .valores{
+        padding-left: 0;
+        padding-top: 50px;
+        color: rgb(214, 203, 203);
+        font-family: "roboto slab", "Helvetica Neue";
+    }
+    .trabaja{
+        padding-left: 0;
+
+    }
+    .contenedor h2{
+        padding-left: 0;
+    }
+}
+/* Escritorio pequeño / tablet */
+@media(min-width: 768px) and (max-width: 991px){
+    .contenedor h2{
+        padding-left: 5%;
+    }
+}
